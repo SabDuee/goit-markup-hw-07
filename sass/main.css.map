@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,KAAK,CAAC;EACJ,eAAe,CAAA,QAAC;EAChB,eAAe,CAAA,QAAC;CACjB;;AACD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,OAAO;EACnB,WAAW,EAAE,kBAAkB;EAC/B,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM;CACvB;;AACD,AAAA,CAAC;AACD,OAAO;AACP,QAAQ,CAAC;EACP,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;CACjB;;AACD,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AACD,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,MAAM;AACN,KAAK;AACL,QAAQ;AACR,MAAM;AACN,QAAQ,CAAC;EACP,WAAW,EAAE,OAAO;EACpB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_mixins.scss",
+        "utils/_placeholders.scss",
+        "base/_global-styles-resets.scss",
+        "components/_common.scss",
+        "components/_header.scss",
+        "components/_hero.scss",
+        "components/_aspects-section.scss",
+        "components/_do-section.scss",
+        "components/_our-team-section.scss",
+        "components/_socials.scss",
+        "components/_customers-section.scss",
+        "components/_footer.scss",
+        "components/_logo.scss",
+        "components/_filter.scss",
+        "components/_portfolio.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
