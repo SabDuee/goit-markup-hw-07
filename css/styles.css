@@ -111,8 +111,8 @@ textarea {
   padding-top: 30px;
   padding-bottom: 30px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+    0px 1px 1px rgb(0 0 0 / 14%) 0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
@@ -416,6 +416,12 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
+
+  flex-basis: calc((100% - 60px) / 3);
+
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .flex-element .product__item {
   justify-content: center;
@@ -423,14 +429,6 @@ textarea {
   font-size: 16px;
   line-height: 1.9;
   color: #757575;
-}
-
-.flex-element {
-  flex-basis: calc((100% - 60px) / 3);
-
-  box-sizing: border-box;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .flex-element h2 {

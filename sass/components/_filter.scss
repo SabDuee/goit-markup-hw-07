@@ -1,0 +1,111 @@
+.flex-filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-element__item {
+  padding: 24px 20px;
+}
+
+.flex-element {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+
+  flex-basis: calc((100% - 60px) / 3);
+
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.flex-element .product__item {
+  justify-content: center;
+
+  font-size: 16px;
+  line-height: 1.9;
+  color: #757575;
+}
+
+.flex-element h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+  margin-bottom: 4px;
+  justify-content: center;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0px;
+}
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-work__link:hover .product-thumb__container,
+.portfolio-work__link:focus .product-thumb__container {
+  transform: translateY(0);
+}
+.portfolio-work__link {
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.portfolio-work__link:hover,
+.portfolio-work__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.flex-element__item {
+  padding: 24px 20px;
+}
+
+.filter {
+  display: flex;
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.4;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-container:not(:last-child) {
+  margin-right: 8px;
+}
+.filter__item button {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, box-shadow;
+}
+
+.filter__item:hover,
+.filter__item:focus {
+  color: var(--color-hover--);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.pointer-cursor {
+  cursor: pointer;
+
+  background-color: #f5f4fa;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+}
+.filter__text:focus,
+.filter__text:hover {
+  background: #2196f3;
+  color: #ffffff;
+}

@@ -116,4 +116,36 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.section-clients {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client__link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  padding: 16px 32px;
+  cursor: pointer;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.client__link:hover,
+.client__link:focus {
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
 /*# sourceMappingURL=main.css.map */

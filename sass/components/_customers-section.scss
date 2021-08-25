@@ -1,0 +1,37 @@
+.section-clients {
+  margin-top: 50px;
+  display: flex;
+}
+.client__link {
+  @include centeredFlex();
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  @include mainTransition(border-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+.client__link:hover,
+.client__link:focus {
+  fill: $icons-color;
+
+  @include mainTransition(fill);
+
+  .customers-list__link:hover &,
+  .customers-list__link:focus & {
+    fill: $accent-color;
+  }
+}
+.section-clients__iteam:not(:last-child) {
+  margin-right: 30px;
+}
