@@ -1,8 +1,8 @@
-.header-color {
+.header {
   border-bottom: 1px solid #ececec;
   height: 80px;
 }
-.nav--container {
+.container--padding {
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
@@ -13,10 +13,14 @@
   display: flex;
   align-items: center;
 }
-.webstudio-header {
-  font-family: Raleway;
+.company-logo {
   font-weight: 700;
   text-decoration: none;
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 26px;
+  line-height: 1.19;
 }
 .color__web {
   font-family: Raleway;
@@ -25,7 +29,7 @@
   line-height: 1.2;
   color: #2196f3;
 }
-.color__studio {
+.logo--accent {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -49,13 +53,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
+  position: relative;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: #2196f3;
-}
-.navigation__link.current {
+.navigation__link .navigation__link--current {
   position: relative;
 }
 .contacts {
@@ -80,20 +85,11 @@
   margin-left: 50px;
 }
 
-.auth-nav__icon {
-  fill: #757575;
-
-  width: 16px;
-  height: 12px;
-}
-.auth-nav {
+.contacts-icon {
   margin-right: 10px;
   display: block;
 }
-.contacts__link:hover,
-.contacts__link:focus {
-  color: #2196f3;
-}
+
 .contacts__link {
   color: #757575;
   display: flex;
@@ -102,11 +98,25 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color;
+
+  &:focus,
+  &:hover {
+    color: #2196f3;
+  }
+  &:hover .contacts-icon,
+  &:focus .contacts-icon {
+    fill: #2196f3;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color;
+  }
 }
+
 .current.current {
   color: #2196f3;
 }
-.navigation .current::after {
+.navigation .navigation__link--current:after {
   content: "";
   position: absolute;
   bottom: 0;

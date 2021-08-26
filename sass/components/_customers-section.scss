@@ -1,13 +1,16 @@
-.section-clients {
+.checkbox__link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.clients {
   margin-top: 50px;
   display: flex;
 }
-.section-clients__iteam:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
-.section-clients__iteam:not(:last-child) {
-  margin-right: 30px;
-}
+
 .client__link {
   display: block;
   width: 170px;
@@ -22,9 +25,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    color: #2196f3;
+  }
 }
-.client__link:hover,
-.client__link:focus {
-  border: 1px solid #2196f3;
-  color: #2196f3;
+textarea {
+  resize: none;
 }

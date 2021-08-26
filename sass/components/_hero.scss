@@ -45,14 +45,13 @@
   border-radius: 4px;
   margin-top: 30px;
   border: transparent;
+  cursor: pointer;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color, box-shadow;
 }
-.cursor {
-  cursor: pointer;
-}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -117,10 +116,12 @@
   border-radius: 50%;
   width: 18px;
   height: 18px;
+
+  &:hover {
+    color: #2196f3;
+  }
 }
-.modal__svg:hover {
-  color: #2196f3;
-}
+
 button {
   cursor: pointer;
 }

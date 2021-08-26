@@ -1,4 +1,4 @@
-.section-work {
+.section__work--nopaddingtop {
   padding-top: 0px;
 }
 .section__title {
@@ -14,14 +14,14 @@
   margin-top: 50px;
   display: flex;
 }
-.work__item {
+.works__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.works__item:not(:last-child) {
-  margin-right: 30px;
-}
-.work-container {
+.work__container {
   width: 100%;
   height: 70px;
   position: absolute;
@@ -33,7 +33,7 @@
   font-weight: 700;
   background: rgba(47, 48, 58, 0.8);
 }
-.work-title__item {
+.work__container--title {
   color: #ffffff;
   text-transform: uppercase;
 }
